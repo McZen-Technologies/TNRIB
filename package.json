@@ -1,0 +1,22 @@
+{
+  "name": "@mczentechnologies/tnrib",
+  "version": "1.0.0",
+  "description": "Vérificateur de RIB Tunisien",
+  "main": "tnrib.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/McZen-Technologies/TNRIB.git"
+  },
+  "keywords": [
+    "RIB"
+  ],
+  "author": "Safouan Besrour",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/McZen-Technologies/TNRIB/issues"
+  },
+  "homepage": "https://github.com/McZen-Technologies/TNRIB#readme"
+}
