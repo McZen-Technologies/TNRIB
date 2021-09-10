@@ -38,34 +38,29 @@ class TNRIB {
 				const cle = 97 - Number(BigInt(this.value.substring(0,18)+'00') % 97n)
 				if(Number(this.value.slice(-2)) === cle){
 					return true
-				}else{
-					return false
 				}
-			}else{
 				return false
+				
 			}
-		}else{
 			return false
 		}
+		return false
+		
 	}
 	
 	iban() {
-		if(this.isValid()) return `TN59 ${this.value.substring(0,2)} ${this.value.substring(2,5)} ${this.value.substring(5,18)} ${this.value.substring(18,20)}`
-		else return undefined
+		return this.isValid() ? `TN59 ${this.value.substring(0,2)} ${this.value.substring(2,5)} ${this.value.substring(5,18)} ${this.value.substring(18,20)}` : undefined;
 	}
 	
 	bic(){
-		if(this.isValid()) return `${TNRIB.data.find(element => element.code == this.value.substring(0,2)).bic}TNTT`
-		else return undefined
+		return this.isValid() ? `${TNRIB.data.find(element => element.code == this.value.substring(0,2)).bic}TNTT` : undefined;
 	}
 	
 	acompteNumber() {
-		if(this.isValid()) return this.value.substring(5,18)
-		else return undefined
+		return this.isValid() ? this.value.substring(5,18) : undefined;
 	}
 	
 	bankName() {
-		if(this.isValid()) return TNRIB.data.find(element => element.code == this.value.substring(0,2)).name
-		else return undefined
+		return this.isValid() ? TNRIB.data.find(element => element.code == this.value.substring(0,2)).name : undefined;
 	}
 }
