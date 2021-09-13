@@ -19,18 +19,17 @@ class TNRIB {
 		{ code: '24', name: 'BTE', bic: 'BTEX' },
 		{ code: '25', name: 'ZITOUNA', bic: 'BZIT' },
 		{ code: '26', name: 'BTL', bic: 'ATLD' },
-		{ code: '28', name: 'َََABC', bic: 'ABCO' },
-		{ code: '29', name: 'َََBFPME', bic: 'BFPM' },
-		{ code: '32', name: 'ََALBARAKA', bic: 'BEIT' },
-		{ code: '47', name: 'ََWIFAK', bic: 'WKIB' }
+		{ code: '28', name: 'ABC', bic: 'ABCO' },
+		{ code: '29', name: 'BFPME', bic: 'BFPM' },
+		{ code: '32', name: 'ALBARAKA', bic: 'BEIT' },
+		{ code: '47', name: 'WIFAK', bic: 'WKIB' }
 	]
 
 	constructor(value) {
 		this.value = value
 	}
 
-	// NOTE: if you want to force the behave here to be private should use # or symbols.
-	__getExistElementByCurrentCode() {
+	#getExistElementByCurrentCode() {
 		return TNRIB.data.find(({ code }) => code == this.value.substring(0, 2))
 	}
 
@@ -38,7 +37,7 @@ class TNRIB {
 		const regex = new RegExp('[0-9]{20}')
 		return (
 			regex.test(this.value) &&
-			this.__getExistElementByCurrentCode() &&
+			this.#getExistElementByCurrentCode() &&
 			+this.value.slice(-2) === (97 - Number(BigInt(this.value.substring(0, 18) + '00') % 97n))
 		)
 	}
@@ -48,7 +47,7 @@ class TNRIB {
 	}
 
 	bic() {
-		return this.isValid() && `${this.__getExistElementByCurrentCode().bic}TNTT`
+		return this.isValid() && `${this.#getExistElementByCurrentCode().bic}TNTT`
 	}
 
 	acompteNumber() {
@@ -56,6 +55,6 @@ class TNRIB {
 	}
 
 	bankName() {
-		return this.isValid() && this.__getExistElementByCurrentCode().name
+		return this.isValid() && this.#getExistElementByCurrentCode().name
 	}
 }
