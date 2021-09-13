@@ -25,8 +25,16 @@ class TNRIB {
 		{ code: '47', name: 'WIFAK', bic: 'WKIB' }
 	]
 
+	
 	constructor(value) {
 		this.value = value
+		this.valid = this.isValid()
+		if(this.valid){
+			this.iban = this.iban()
+			this.bic = this.bic()
+			this.acompteNumber = this.acompteNumber()
+			this.bankName = this.bankName()
+		}
 	}
 
 	#getExistElementByCurrentCode() {
