@@ -25,12 +25,7 @@ class TNRIB {
 		{ code: '47', name: 'ََWIFAK', bic: 'WKIB' }
 	]
 
-	valid
-	iban
-	bic
-	acompteNumber
-	bankName
-	 
+	
 	constructor(value) {
 		this.value = value
 		this.valid = this.isValid()
