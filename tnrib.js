@@ -25,8 +25,21 @@ class TNRIB {
 		{ code: '47', name: 'ََWIFAK', bic: 'WKIB' }
 	]
 
+	valid
+	iban
+	bic
+	acompteNumber
+	bankName
+	 
 	constructor(value) {
 		this.value = value
+		this.valid = this.isValid()
+		if(this.valid){
+			this.iban = this.iban()
+			this.bic = this.bic()
+			this.acompteNumber = this.acompteNumber()
+			this.bankName = this.bankName()
+		}
 	}
 
 	// NOTE: if you want to force the behave here to be private should use # or symbols.
