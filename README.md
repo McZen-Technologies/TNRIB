@@ -5,6 +5,8 @@
 Le RIB (Relevé d'identité bancaire) est un numéro qui identifie d'une manière unique un compte bancaire en Tunisie.
 Le relevé d'identité bancaire tunisien est constitué d'une série de 20 chiffres.
 
+Voir la démo sur [trovit.tn](https://trovit.tn/rib)
+
 ## Usage dans le navigateur
 
 ```html
