@@ -7,6 +7,13 @@ Le relevé d'identité bancaire tunisien est constitué d'une série de 20 chiff
 
 Voir la démo sur [trovit.tn](https://trovit.tn/rib)
 
+---
+
+The BBAN (Basic Bank Account Number) or is a number that uniquely identifies a bank account. The Tunisian BBAN is made up of a series of 20 digits.
+
+See the demo on [trovit.tn](https://trovit.tn/rib)
+
+
 ## Usage dans le navigateur
 
 ```html
