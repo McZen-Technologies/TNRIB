@@ -50,7 +50,7 @@ console.log(new TNRIB('07040005810111129653').bankName());
 // expected output:  'AMEN'	
 ```	
 
-#### Get an TNRIB Object
+#### Get the TNRIB Object
 ```js
 console.log(new TNRIB('07040005810111129653'))
 // expected output: 
