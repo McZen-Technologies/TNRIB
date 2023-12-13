@@ -26,26 +26,31 @@ console.log(new TNRIB('07040005810111129653').isValid());
 // expected output: true
 ```
 
+#### Get IBAN
 ```js
 console.log(new TNRIB('07040005810111129653').iban());
 // expected output: 'TN59 07 040 0058101111296 53'
 ```
 
+#### Get SWIFT/BIC code
 ```js
 console.log(new TNRIB('07040005810111129653').bic());
 // expected output:  'CFCTTNTT'
 ```
 
+#### Get Account Number
 ```js
 console.log(new TNRIB('07040005810111129653').accountNumber());
 // expected output:  '0058101111296'	
 ```	
-	
+
+#### Get Bank Name
 ```js	
 console.log(new TNRIB('07040005810111129653').bankName());	
 // expected output:  'AMEN'	
 ```	
 
+#### Get an TNRIB Object
 ```js
 console.log(new TNRIB('07040005810111129653'))
 // expected output: 
