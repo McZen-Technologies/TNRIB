@@ -22,7 +22,8 @@ class TNRIB {
 		{ code: '28', name: 'ABC', bic: 'ABCO' },
 		{ code: '29', name: 'BFPME', bic: 'BFPM' },
 		{ code: '32', name: 'ALBARAKA', bic: 'BEIT' },
-		{ code: '47', name: 'WIFAK', bic: 'WKIB' }
+		{ code: '47', name: 'WIFAK', bic: 'WKIB' },
+		{ code: '81', name: 'ZITOUNAPAY', bic: 'ETZP' }
 	]
 
 	
@@ -32,7 +33,7 @@ class TNRIB {
 		if(this.valid){
 			this.iban = this.iban()
 			this.bic = this.bic()
-			this.acompteNumber = this.acompteNumber()
+			this.accountNumber = this.accountNumber()
 			this.bankName = this.bankName()
 		}
 	}
@@ -58,7 +59,7 @@ class TNRIB {
 		return this.isValid() && `${this.#getExistElementByCurrentCode().bic}TNTT`
 	}
 
-	acompteNumber() {
+	accountNumber() {
 		return this.isValid() && this.value.substring(5, 18)
 	}
 
