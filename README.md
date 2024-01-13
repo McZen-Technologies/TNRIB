@@ -1,6 +1,6 @@
 # TNRIB (Vérificateur de RIB Tunisie)
 
-[![](https://data.jsdelivr.com/v1/package/gh/mczen-technologies/tnrib/badge)](https://www.jsdelivr.com/package/gh/mczen-technologies/tnrib) [![GitHub license](https://img.shields.io/github/license/McZen-Technologies/TNRIB?style=flat-square)](https://github.com/McZen-Technologies/TNRIB/blob/main/LICENSE)
+[![](https://data.jsdelivr.com/v1/package/gh/mczen-technologies/tnrib/badge)](https://www.jsdelivr.com/package/gh/mczen-technologies/tnrib) [![GitHub license](https://img.shields.io/github/license/McZen-Technologies/TNRIB?style=flat-square)](https://github.com/McZen-Technologies/TNRIB/blob/main/LICENSE) [![Google Play Badge](https://img.shields.io/badge/Google%20Play-414141?logo=googleplay&logoColor=fff&style=flat-square)](https://play.google.com/store/apps/details?id=tn.trovit.iban&pcampaignid=web_share)
 
 Le RIB (Relevé d'identité bancaire) est un numéro qui identifie d'une manière unique un compte bancaire en Tunisie.
 Le relevé d'identité bancaire tunisien est constitué d'une série de 20 chiffres.
